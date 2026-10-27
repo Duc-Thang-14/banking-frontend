@@ -282,9 +282,9 @@ export default function App() {
                             </div>
                             <div className="text-[11px] text-slate-400 mt-0.5">
                               {isTopUp ? (
-                                <span>Nạp từ cổng thanh toán</span>
+                                <span>Từ: <strong className="font-mono text-cyan-300">Kho tiền Hệ thống ({tx.sourceWalletNumber || 'SYS_TREASURY'})</strong></span>
                               ) : isWithdraw ? (
-                                <span>Rút về STK ngân hàng liên kết</span>
+                                <span>Đến: <strong className="font-mono text-amber-300">Kho tiền Hệ thống ({tx.destinationWalletNumber || 'SYS_TREASURY'})</strong></span>
                               ) : isOut ? (
                                 <span>Đến ví: <strong className="font-mono text-indigo-300">{tx.destinationWalletNumber}</strong></span>
                               ) : (

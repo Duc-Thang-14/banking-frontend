@@ -40,7 +40,7 @@ export const WalletCard: React.FC<WalletCardProps> = ({ wallet, username }) => {
             <span className="font-bold text-sm tracking-wider uppercase text-white/90">Apex Bank</span>
             <div className="flex items-center gap-1 text-[11px] text-emerald-400">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>Ví chính ({wallet?.walletType || 'MAIN'})</span>
+              <span>{wallet?.walletType === 'SYSTEM' ? 'Kho tiền Hệ Thống (SYSTEM)' : `Ví chính (${wallet?.walletType || 'MAIN'})`}</span>
             </div>
           </div>
         </div>

@@ -61,18 +61,16 @@ export const AuthView: React.FC = () => {
           <button
             type="button"
             onClick={() => { setIsRegister(false); setError(null); }}
-            className={`py-2 text-xs font-bold rounded-lg transition-all ${
-              !isRegister ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-400 hover:text-white'
-            }`}
+            className={`py-2 text-xs font-bold rounded-lg transition-all ${!isRegister ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-400 hover:text-white'
+              }`}
           >
             Đăng nhập
           </button>
           <button
             type="button"
             onClick={() => { setIsRegister(true); setError(null); }}
-            className={`py-2 text-xs font-bold rounded-lg transition-all ${
-              isRegister ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-400 hover:text-white'
-            }`}
+            className={`py-2 text-xs font-bold rounded-lg transition-all ${isRegister ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-400 hover:text-white'
+              }`}
           >
             Mở tài khoản mới
           </button>

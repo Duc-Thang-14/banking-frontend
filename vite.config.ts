@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    port: 3000,
+    port: 3001,
     strictPort: true, // Nếu cổng 3000 bị chiếm sẽ báo lỗi thay vì tự nhảy sang cổng khác
   },
 })
